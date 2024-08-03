@@ -18,7 +18,8 @@ echo #  3. Procurar erros no disco (Check Disk)   #
 echo #  4. Verificar erros na imagem do Windows   #
 echo #  5. Atualizar todos os softwares           #
 echo #  6. Gerar lista de softwares instalados    #
-echo #  7. Sair                                   #
+echo #  7. Verificar data de instalação (Windows) #
+echo #  10. Sair                                  #
 echo ==============================================
 
 set /p opcao= Escolha uma opcao: 
@@ -30,7 +31,7 @@ if %opcao% equ 4 goto opcao4
 if %opcao% equ 5 goto opcao5
 if %opcao% equ 6 goto opcao6
 if %opcao% equ 7 goto opcao7
-if %opcao% geq 8 goto opcao8
+if %opcao% geq 10 goto opcao10
 
 :opcao1
 cls
@@ -88,6 +89,15 @@ pause
 goto menu
 
 :opcao7
+cls
+systeminfo | find /i "Original"
+echo ===============================
+echo #      Verifique a data       #
+echo ===============================
+pause
+goto menu
+
+:opcao10
 cls
 echo Tchau^!^!^!
 pause
