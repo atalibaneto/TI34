@@ -1,0 +1,27 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: aqua;
+    color: #5C574E;
+}
+
+nav ul {
+    height: 20px;
+    list-style: none;
+    padding: 10px;
+    border: 2px solid rgba(31, 50, 112, 0.3);
+    background-color: #fff;
+}
+nav ul li {
+    float: left;
+    border-left: 1px solid rgba(31, 50, 112, 0.3);
+    border-right: 1px solid rgba(31, 50, 112, 0.3);
+}
+nav ul li a:hover {
+    color:aquamarine;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 56px;
+    line-height: 2em;
+    text-align: center;
+}  
