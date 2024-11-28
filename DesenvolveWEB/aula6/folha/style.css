@@ -4,7 +4,7 @@
 .container-flex {
     display: flex;
     /* flex-direction, configura a direção do eixo. sintaxe: column, column-reverse, row, row-reverse */
-    flex-direction: column-reverse;
+    flex-direction: row;
     background: gray;
 }
 .container-flex > div {
@@ -18,6 +18,7 @@
     display: flex;
     flex-wrap: wrap;
     background: gray;
+
 }
 .container-flex-wrap > div {
     background: black;
