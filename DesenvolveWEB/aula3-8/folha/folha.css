@@ -40,3 +40,20 @@ footer {
     padding: 20px;
     text-align: center;
 }
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+}
+.product h2 {
+    color: #363973;
+}
+.product p {
+    margin: 5px 0;
+}
+.price {
+    color: #F2B680;
+    font-weight: bold;
+}
