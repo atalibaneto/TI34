@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+}
+:root {
+    --bg-nave-Bar-claro: #A517BA;
+    --bg-nave-Bar-escuro: #5F1782;
+    --cor-branca: #FFF;
+    --cor-traco-titulo: #7B1798;
+}
+#barra-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar {
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-claro), var(--bg-nave-Bar-escuro));
+    padding: 0 !important;
+}
+.navbar-brand img {
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-nav li {
+    padding: 0 10px;
+}
+.navbar-nav li a {
+    color: var(--cor-branca) !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars {
+    color: var(--cor-branca);
+    font-size: 30px !important;
+}
+.navbar-toggler {
+    outline: none !important;
+}
+/* ---------------- banner ------------------ */
+#banner {
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-claro), var(--bg-nave-Bar-escuro));
+    color: var(--cor-branca);
+    padding-top: 5%;
+}
+#banner a {
+    color: var(--cor-branca);
+    text-decoration: none;
+}
+.titulo_promo {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100;
+}
+.botao_play {
+    width: 45px;
+    margin: 20px;
+}
+.img-baixa {
+    width: 100%;
+}
+/* ----------------- Serviços ----------------- */
+#servicos {
+    padding: 80px 0;
+}
+.img-servicos {
+    width: 100px;
+    margin-top: 20px;
+}
+.servicos {
+    padding: 20px;
+}
+.servicos h4 {
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+#servicos .btn-primary {
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-claro), var(--bg-nave-Bar-escuro));
+}
+.titulo::after {
+    content: '';
+    background: var(--cor-traco-titulo);
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+
+}
+.titulo::before {
+    content: '';
+}
