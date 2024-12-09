@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: sans-serif;
 }
@@ -11,6 +14,7 @@ body {
     --cor-branca: #FFF;
     --cor-traco-titulo: #7B1798;
     --bg-cor-cinza-claro: #F8F9FA;
+    --cor-vermelho: #ff004f;
 }
 #barra-nav {
     position: sticky;
@@ -157,4 +161,48 @@ body {
 /* ---------------- rodape -------------- */
 .rodape-img {
     width: 100%;
+}
+#rodape {
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-claro), var(--bg-nave-Bar-escuro));
+    color: var(--cor-branca);
+}
+.rodape-caixa {
+    padding:50px;
+    margin: 0;
+}
+.rodape-caixa img {
+    height: 60px;
+    margin-bottom: 20px;
+}
+.rodape-caixa .fa-solid {
+    margin-right: 8px;
+    font-size: 25px;
+    width: 25px;
+}
+.rodape-caixa .formulario {
+    box-shadow: none;
+    border: none;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+.rodape-caixa .btn-primary {
+    box-shadow: none;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-claro), var(--bg-nave-Bar-escuro));
+}
+.copy {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-claro), var(--bg-nave-Bar-escuro));
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copy i {
+    color: var(--cor-vermelho);
 }
