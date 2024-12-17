@@ -22,7 +22,7 @@
     float: left;
     text-align: center;
 }
-video {
+video iframe{
     position: absolute;
     top: 50%;
     left: 50%;
