@@ -32,6 +32,7 @@ iframe{
     height: auto;
     z-index: 0;
     transform: translateX(-50%) translateY(-50%);
+    pointer-events: none; /* Desativa interações com o video */
 }
 .carousel-item {
     height: 100vh;
