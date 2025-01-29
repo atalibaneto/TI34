@@ -1,0 +1,29 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-flex {
+    display: flex;
+    /* flex-direction, configura a direção do eixo. sintaxe: column, column-reverse, row, row-reverse */
+    flex-direction: row;
+    background: gray;
+}
+.container-flex > div {
+    background: black;
+    margin: 10px 5px 10px 5px;
+    padding: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+.container-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    background: gray;
+
+}
+.container-flex-wrap > div {
+    background: black;
+    margin: 10px 5px 10px 5px;
+    padding: 20px;
+    font-size: 30px;
+    color: #fff;
+}

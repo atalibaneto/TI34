@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div {
+    border: 2px dashed #fc0;
+    height: 200px;
+    width: 50%;
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 15px;
+    color: #fff;
+    text-transform: capitalize;
+}
+h1 {
+    text-shadow: 4px 4px 5px blue;
+}
+.esconder {
+    display: none !important;
+}

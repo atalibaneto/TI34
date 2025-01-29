@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+}
+:root {
+    --bg-nave-Bar-claro: #A517BA;
+    --bg-nave-Bar-escuro: #5F1782;
+    --cor-branca: #FFF;
+    --cor-traco-titulo: #7B1798;
+    --bg-cor-cinza-claro: #F8F9FA;
+    --cor-vermelho: #ff004f;
+}
+#barra-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar {
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-claro), var(--bg-nave-Bar-escuro));
+    padding: 0 !important;
+}
+.navbar-brand img {
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-nav li {
+    padding: 0 10px;
+}
+.navbar-nav li a {
+    color: var(--cor-branca) !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars {
+    color: var(--cor-branca);
+    font-size: 30px !important;
+}
+.navbar-toggler {
+    outline: none !important;
+}
+/* ---------------- banner ------------------ */
+#banner {
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-claro), var(--bg-nave-Bar-escuro));
+    color: var(--cor-branca);
+    padding-top: 5%;
+}
+#banner a {
+    color: var(--cor-branca);
+    text-decoration: none;
+}
+.titulo_promo {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100;
+}
+.botao_play {
+    width: 45px;
+    margin: 20px;
+}
+.img-baixa {
+    width: 100%;
+}
+/* ----------------- Serviços ----------------- */
+#servicos {
+    padding: 80px 0;
+}
+.img-servicos {
+    width: 100px;
+    margin-top: 20px;
+}
+.servicos {
+    padding: 20px;
+}
+.servicos h4 {
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+#servicos .btn-primary {
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-claro), var(--bg-nave-Bar-escuro));
+}
+.titulo::after {
+    content: '';
+    background: var(--cor-traco-titulo);
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+
+}
+.titulo::before {
+    content: '';
+    background: var(--cor-traco-titulo);
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+/* ---------------- sobre -------------- */
+#sobre {
+    background: var(--bg-cor-cinza-claro);
+    padding: 50px 0;
+}
+.sobre-titulo {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+}
+#sobre ul {
+    margin-left: 20px;
+}
+#sobre ul li {
+    margin: 10px 0;
+}
+/* ---------------- clientes -------------- */
+#clientes {
+    margin: 50px 0;
+}
+.clientes {
+    border-left: 4px solid var(--cor-traco-titulo);
+    margin: 50px 0;
+}
+.clientes img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.cargo-cliente {
+    display: inline-block;
+    font-size: 12px;
+}
+/* ---------------- redes sociais -------------- */
+#social {
+    background: var(--bg-cor-cinza-claro);
+    padding: 50px 0;
+}
+.social-ico img {
+    width: 60px;
+    transition: 0.5s;
+}
+.social-ico a:hover img {
+    transform: translateY(-10px);
+}
+/* ---------------- rodape -------------- */
+.rodape-img {
+    width: 100%;
+}
+#rodape {
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-claro), var(--bg-nave-Bar-escuro));
+    color: var(--cor-branca);
+}
+.rodape-caixa {
+    padding:50px;
+    margin: 0;
+}
+.rodape-caixa img {
+    height: 60px;
+    margin-bottom: 20px;
+}
+.rodape-caixa .fa-solid {
+    margin-right: 8px;
+    font-size: 25px;
+    width: 25px;
+}
+.rodape-caixa .formulario {
+    box-shadow: none;
+    border: none;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+.rodape-caixa .btn-primary {
+    box-shadow: none;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-claro), var(--bg-nave-Bar-escuro));
+}
+.copy {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-claro), var(--bg-nave-Bar-escuro));
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copy i {
+    color: var(--cor-vermelho);
+}
