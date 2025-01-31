@@ -20,7 +20,72 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Olá, meu nome é <span>John Doe</span></h1>
+            </div>
         </div>
     </div>
+    <!-- ---------- SOBRE--------------- -->
+    <div id="sobre">
+        <div class="container">
+            <div class="linha">
+                <div class="sobre-col-1">
+                    <img src="imagens/sobre.png">
+                </div>
+                <div class="sobre-col-2">
+                    <h1 class="subtitulo">Sobre</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quasi blanditiis corrupti odio aliquam repellendus excepturi placeat eligendi molestias optio modi quidem nobis, molestiae deleniti. Voluptatem ducimus dignissimos est veniam!
+                    </p>
+                    <div class="aba-titulos">
+                        <p class="aba-links link-ativo" onclick="abriraba('skills')">Skills</p>
+                        <p class="aba-links" onclick="abriraba('experiencia')">Experiência</p>
+                        <p class="aba-links" onclick="abriraba('formacao')">Formação</p>
+                    </div>
+                    <div class="aba-conteudos aba-ativa" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desenvolvimento de Interfaces Web/APP</li>
+                            <li><span>Web Development</span><br>Desenvolvimento de Sites</li>
+                            <li><span>APP Development</span><br>Desenvolvimento de Apps para Android e iOS</li>
+                        </ul>
+                    </div>
+                    <div class="aba-conteudos" id="experiencia">
+                        <ul>
+                            <li><span>2021 - Até hoje</span><br>Professor Honorário no MIT</li>
+                            <li><span>2011 - 2021</span><br>CIO at IBM</li>
+                            <li><span>2004 - 2011</span><br>Desenvolvedor na Google Inc.</li>
+                        </ul>
+                    </div>
+                    <div class="aba-conteudos" id="formacao">
+                        <ul>
+                            <li><span>2010</span><br>MBA no MIT</li>
+                            <li><span>2009</span><br>MBA Harvard</li>
+                            <li><span>2003</span><br>Serviço Nacional de Aprendizagem Comercial (Senac) - Botucatu / SP</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var abaLinks = document.getElementsByClassName("aba-links");
+        var abaConteudos = document.getElementsByClassName("aba-conteudos");
+
+        function abriraba(abaNome) {
+            for (abaLink of abaLinks) {
+                abaLink.classList.remove("link-ativo");
+            }
+            for (abaConteudo of abaConteudos) {
+                abaConteudo.classList.remove("aba-ativa");
+            }
+            event.currentTarget.classList.add("link-ativo");
+            document.getElementById(abaNome).classList.add("aba-ativa");
+        }
+
+    </script>
 </body>
 </html>
