@@ -13,13 +13,15 @@
         <div class="container">
             <nav>
                 <img src="imagens/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Portfólio</a></li>
-                    <li><a href="#">Contato</a></li>
+                <ul id="menulateral">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <i class="fa-solid fa-xmark" onclick="fecharmenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="abrirmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>UI/UX Designer</p>
@@ -178,6 +180,16 @@
             }
             event.currentTarget.classList.add("link-ativo");
             document.getElementById(abaNome).classList.add("aba-ativa");
+        }
+
+    </script>
+    <script>
+        var menudolado = document.getElementById("menulateral");
+        function abrirmenu() {
+            menudolado.style.right = "0"
+        }
+        function fecharmenu() {
+            menudolado.style.right = "-200px";
         }
 
     </script>
