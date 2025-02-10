@@ -10,6 +10,10 @@
     --bg-pink: #ff004f;
     --bg-cinza: #262626;
     --bg-cinza-claro: #ababab;
+    --verde: #61B752;
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
     background-color: var(--bg-cinza-escuro);
@@ -379,4 +383,9 @@ nav .fa-solid {
     nav i .fa-solid, .fa-bars {
         cursor: pointer;
     }
+}
+#msg {
+    color: var(--verde);
+    margin-top: -40px;
+    display: block;
 }
