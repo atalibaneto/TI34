@@ -12,7 +12,9 @@
     ?>
     <h2>Digite um número para a tabuada</h2>
     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="get">
-     <input type="number" name="valor" value="<?php $valor ?>">
+     <input type="number" name="valor" value="<?php echo $valor ?>"><br>
+     <button type="submit">Enviar</button>
+    </form>
      <?php 
              if ($valor != 0) {
      echo "<h2>Resultado da tabuada</h2>";
