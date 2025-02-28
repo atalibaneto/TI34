@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-    <?php include "menu.php" ?>
+    <?php include "menu.php"; ?>
     <br><br>
     <form action="processa_form.php" method="post">
         <label for="cidade">Escolha sua cidade:</label>

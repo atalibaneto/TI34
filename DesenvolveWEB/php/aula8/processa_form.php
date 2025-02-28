@@ -8,7 +8,7 @@
   </head>
   <body>
   <div class="container">
-  <?php include "menu.php" ?>
+  <?php include "menu.php"; ?>
     <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $cidade = $_POST['cidade'];
