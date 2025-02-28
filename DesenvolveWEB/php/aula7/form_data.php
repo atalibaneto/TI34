@@ -28,6 +28,54 @@
             {
                 echo "<p>Nenhuma resposta foi selecionada</p>";
             }
+                        if (isset($_POST['questao2'])) //verifica se a variável está vazia
+            {
+                $resposta1 = $_POST['questao2'];
+                if ($resposta1 == 'nao') {
+                    $resposta1 = "<div class=\"text-danger\">Não</div>";
+                } else 
+                {
+                    $resposta1 = "<div class=\"text-success\">Sim</div>";
+                }
+                echo "<h4>Você já sofreu gordofobia em uma entrevista de emprego? <strong>$resposta1</strong></h4>";
+            }
+            else
+            {
+                echo "<p>Nenhuma resposta foi selecionada</p>";
+            }
+                        if (isset($_POST['questao3'])) //verifica se a variável está vazia
+            {
+                $resposta1 = $_POST['questao3'];
+                if ($resposta1 == 'nao') {
+                    $resposta1 = "<div class=\"text-danger\">Não</div>";
+                } else 
+                {
+                    $resposta1 = "<div class=\"text-success\">Sim</div>";
+                }
+                echo "<h4>Você já sofreu algum preconceito racial em entrevista de emprego? <strong>$resposta1</strong></h4>";
+            }
+            else
+            {
+                echo "<p>Nenhuma resposta foi selecionada</p>";
+            }
+                        if (isset($_POST['questao4'])) //verifica se a variável está vazia
+            {
+                $resposta1 = $_POST['questao4'];
+                if ($resposta1 == 'nao') {
+                    $resposta1 = "<div class=\"text-danger\">Não</div>";
+                } else 
+                {
+                    $resposta1 = "<div class=\"text-success\">Sim</div>";
+                }
+                echo "<h4>Você já sofreu algum preconceito social em entrevista de emprego? (vestimenta, bairro que mora, condição financeira...) <strong>$resposta1</strong></h4>";
+            }
+            else
+            {
+                echo "<p>Nenhuma resposta foi selecionada</p>";
+            }
+
+
+
         }
         else
         {
