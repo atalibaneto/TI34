@@ -1,0 +1,256 @@
+<!-- 
+    
+    Código desenvolvido pela aluna Stephanie Gomes Cardoso da Silva 
+    TI34 - Senac Botucatu
+
+    Utilizado para demonstrar a função mail() em sala de aula
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navalha De Ouro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f267bbc3d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---Ferramenta De Acessibilidade--->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <section id="barra-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="imagens/logo.png" alt="logotipo da barbearia Navalha De Ouro"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#banner">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index2.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#clientes">Clientes</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#rodape">Contato</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+<!--------------------------- Banner ---------------------------- -->
+<section id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="titulo_promo">Navalha De Ouro</h3>
+                <a href="#sobre"><img src="imagens/play.png" class="botao_play">Conheça nossa barbearia</a>
+            </div>
+            <div class="col-md-6">
+                <img src="imagens/Imagem Barbearia.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <img src="imagens/wave1.png" class="img-baixa">
+</section>
+<!-- Sobre Nós -->
+<section id="sobre">
+    <div class="container">
+        <h3 class="titulo text-center">Sobre Nós</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="imagens/Sobre.jpg" alt="Barbeiro realizando um corte de cabelo" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <p class="sobre-texto">
+                    A <strong>Navalha de Ouro</strong> é uma barbearia que combina tradição e modernidade, oferecendo serviços de alta qualidade em um ambiente acolhedor e descontraído. Nossa equipe de barbeiros é altamente qualificada e dedicada a proporcionar a melhor experiência para nossos clientes.
+                </p>
+                <p class="sobre-texto">
+                    Desde cortes de cabelo clássicos até os estilos mais modernos, cuidamos de cada detalhe para garantir que você saia daqui com um visual impecável. Além disso, oferecemos serviços de barba, hidratação capilar e muito mais.
+                </p>
+                <a href="#servicos" class="btn btn-primary">Conheça Nossos Serviços</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ----------------- Serviços ---------------------- -->
+<!-- Seção de Serviços -->
+<section id="servicos">
+    <div class="container text-center">
+        <h3 class="titulo">Nossos Serviços</h3>
+        <div class="row justify-content-center">
+            <!-- Serviço 1: Corte Masculino -->
+            <div class="col-md-4">
+                <div class="box">
+                    <div class="content">
+                        <img src="imagens/Corte Masculino.png" alt="Ilustração de um corte de cabelo masculino">
+                        <h2><span>Corte Masculino</span></h2>
+                        <a href="index1.html" class="btn-custom">Agendar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Serviço 2: Barba e Bigode -->
+            <div class="col-md-4">
+                <div class="box">
+                    <div class="content">
+                        <img src="imagens/Barba e Bigode.png" alt="ilustração de cortes de barba e bigode">
+                        <h2><span>Barba & Bigode</span></h2>
+                        <a href="index1.html" class="btn-custom">Agendar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Serviço 3: Hidratação Capilar -->
+            <div class="col-md-4">
+                <div class="box">
+                    <div class="content">
+                        <img src="imagens/Hidratação Capilar.png" alt="ilustração de tratamento hidratação capilar">
+                        <h2><span>Hidratação Capilar</span></h2>
+                        <a href="index1.html" class="btn-custom">Agendar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Serviço 4: Pacote Premium -->
+            <div class="col-md-4">
+                <div class="box">
+                    <div class="content">
+                        <img src="imagens/Pacote Premium.png" alt="Pacote Premium">
+                        <h2><span>Pacote Premium</span></h2>
+                        <a href="#contato" class="btn-custom">Agendar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ----------------- Clientes ---------------------- -->
+ <section id="clientes">
+    <div class="container">
+        <h3 class="titulo text-center">O que dizem nossos clientes</h3>
+        <div class="row">
+            <div class="col-md-5 clientes">
+                <p>"A Navalha de Ouro é simplesmente incrível! Ambiente acolhedor, barbeiros talentosos e sempre saio de lá satisfeito."</p>
+                <img src="imagens/Cliente-Lucas-M.jpg">
+                <p class="cargo-cliente"><strong>Lucas M.</strong><br>CEO da Digitech+</p>
+            </div>
+            <div class="col-md-5 clientes">
+                <p>"Os barbeiros são super atenciosos e profissionais. Sempre recomendo para meus amigos!"</p>
+                <img src="imagens/Cliente-Rafael-C.jpg">
+                <p class="cargo-cliente"><strong>Rafael C.</strong><br>CIO da Digitech+</p>
+            </div>
+        </div>
+    </div>
+ </section>
+<!-- Redes Sociais -->
+<section id="social">
+    <div class="container text-center">
+        <h3 class="titulo">Siga-nos</h3>
+        <div class="social-ico">
+            <!-- Facebook -->
+            <a href="#" class="social-link neon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- Instagram -->
+            <a href="#" class="social-link neon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <!-- WhatsApp -->
+            <a href="#" class="social-link neon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <!-- TikTok -->
+            <a href="#" class="social-link neon">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- Rodapé -->
+<section id="rodape">
+    <img src="imagens/wave2.png" class="rodape-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 rodape-caixa">
+                <a href="#banner"><img src="imagens/logo.png"></a>
+                <p>Barbearia especializada em cortes masculinos, barba e hidratação capilar, oferecendo um ambiente moderno e serviços de alta qualidade. 
+                Priorizamos sua satisfação, estilo e bem-estar.</p>
+            </div>
+            <div class="col-md-4 rodape-caixa">
+                <p><strong>Contato</strong></p>
+                <p><i class="fa-solid fa-location-dot"></i> Navalha De Ouro </p>
+                <p><i class="fa-solid fa-phone"></i> +55 14 99876-5432 </p>
+                <p><i class="fa-solid fa-envelope"></i> contato@navalhadeouro.com </p>
+            </div>
+            <div class="col-md-4 rodape-caixa">
+                <!-- Formulário de Contato -->
+                <div class="contact-form">
+                    <h3>Contato</h3>
+                    <form method="post" action="processa_mail.php">
+                        <label for="nome">Nome</label>
+                        <input type="nome" name="nome" placeholder="nome" required>
+                        <label for="nome">E-mail</label>
+                        <input type="email" name="email" placeholder="e-mail" required>
+                        <label for="nome">Assunto</label>
+                        <input type="text" name="assunto" placeholder="assunto" required>
+                        <label for="mensagem">Mensagem importante!</label> 
+                        <textarea name="texto" placeholder="Mensagem" required></textarea>
+                        <div class="agendamento">
+                            <button type="submit" class="btn-custom">Enviar</button>
+                        </div>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </form>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="copy">
+        <p>Copyright © 2024. Orgulhosamente feito <i class="fa-solid fa-heart"></i> do Rio Pardo.</p>
+    </div>
+</section>
+</section>
+
+
+<script>
+document.querySelectorAll('.social-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        card.style.setProperty('--rotate-x', `${-(y - rect.height/2)/10}deg`);
+        card.style.setProperty('--rotate-y', `${(x - rect.width/2)/10}deg`);
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.setProperty('--rotate-x', '0deg');
+        card.style.setProperty('--rotate-y', '0deg');
+    });
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
