@@ -1,3 +1,4 @@
+<?php require "banco/conexao.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -40,7 +41,7 @@
                     <div class="row g-3">
                         <div class="col-sm-2">
                         <label for="sexo" class="form-label">Sexo</label>
-                        <select class="form-select" aria-label="Default select example">
+                        <select name="sexo" id="sexo" class="form-select" aria-label="Default select example">
                             <option value="masculino">Masculino</option>
                             <option value="feminino">Feminino</option>
                             <option value="outro">Outro</option>
@@ -52,12 +53,16 @@
                         </div>
                     </div>
                     <div class="row g-3">
-                    <div class="col-sm">
+                        <div class="col-sm">
                             <label for="endereco" class="form-label">Endereço</label>
                             <input type="text" class="form-control" id="endereco" name="endereco">
                         </div>
+                        <div class="col-sm-3">
+                            <label for="dtInternacao" class="form-label">Data Internação</label>
+                            <input type="date" class="form-control" id="dtInternacao" name="dtInternacao">
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-success mt-3">Cadastrar</button>
+                    <button type="submit" name="cadastroPaciente" class="btn btn-success mt-3">Cadastrar</button>
                 </form>
             </div>
         </div>

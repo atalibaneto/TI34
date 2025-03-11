@@ -1,3 +1,4 @@
+<?php require "banco/conexao.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -56,7 +57,7 @@
                             <input type="text" class="form-control" id="telefone" name="telefone">
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-success mt-3">Cadastrar</button>
+                    <button type="submit" name="cadastroFunc" class="btn btn-success mt-3">Cadastrar</button>
                 </form>
             </div>
         </div>
