@@ -1,4 +1,6 @@
-<?php require "banco/conexao.php"; ?>
+<?php 
+session_start();
+require "banco/conexao.php"; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -27,6 +29,7 @@
                 </ul>
             </div>
             <div class="col-sm-8 border p-3">
+                <?php include "mensagem.php"; ?>
                 <form action="frmCadastroPaciente.php" method="post">
                     <div class="row g-3">
                         <div class="col-sm">
