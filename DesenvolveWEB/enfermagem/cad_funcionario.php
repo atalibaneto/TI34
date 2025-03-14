@@ -1,4 +1,7 @@
-<?php require "banco/conexao.php"; ?>
+<?php 
+    session_start();
+    require "banco/conexao.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -27,6 +30,7 @@
                 </ul>
             </div>
             <div class="col-sm-8 border p-3">
+            <?php include "mensagem.php"; ?>
                 <form action="frmCadastroFuncionario.php" method="post">
                     <div class="row g-3">
                         <div class="col-sm">
@@ -41,7 +45,7 @@
                     <div class="row g-3">
                         <div class="col-sm-2">
                         <label for="conselho" class="form-label">Tipo Conselho</label>
-                        <select class="form-select" aria-label="Default select example">
+                        <select name="conselho" class="form-select" aria-label="Default select example">
                             <option value="coren">Coren</option>
                             <option value="crm">Crm</option>
                         </select>
