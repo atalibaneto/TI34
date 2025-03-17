@@ -16,17 +16,7 @@ require "banco/conexao.php"; ?>
         <img src="imagens/logo.png" width="150" alt="Logo Checagem a Beira Leito">
         <div class="row">
             <div class="col-sm-4">
-                <ul class="nav flex-column">
-                    <li class="nav-item p-1">
-                        <a class="btn btn-success" href="index.php">Cadastrar Paciente</a>
-                    </li>
-                    <li class="nav-item p-1">
-                        <a class="btn btn-success" href="cad_funcionario.php">Cadastrar Funcionário</a>
-                    </li>
-                    <li class="nav-item p-1">
-                        <a class="btn btn-success" href="checagem.php">Checagem</a>
-                    </li>
-                </ul>
+                <?php include "menu.php"; ?>
             </div>
             <div class="col-sm-8 border p-3">
                 <?php include "mensagem.php"; ?>
