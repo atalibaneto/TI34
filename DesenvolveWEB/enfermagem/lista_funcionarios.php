@@ -21,7 +21,7 @@ require "banco/conexao.php"; ?>
             <div class="col-sm-9">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Lista de Pacientes</h4>
+                        <h4>Lista de Funcionários</h4>
                     </div>
                     <div class="card-body">
                         <table class="table table-bordered table-striped">
@@ -29,34 +29,32 @@ require "banco/conexao.php"; ?>
                                 <tr>
                                     <th>ID</th>
                                     <th>Nome</th>
-                                    <th>Data Nascimento</th>
-                                    <th>Sexo</th>
-                                    <th>Endereço</th>
-                                    <th>Filiação</th>
-                                    <th>Data de Internação</th>
+                                    <th>Cargo</th>
+                                    <th>Conselho</th>
+                                    <th>Registro</th>
+                                    <th>Telefone</th>
                                     <th>Opções</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php 
-                                    $sql = "SELECT * FROM pacientes";
-                                    $pacientes = mysqli_query($conexao, $sql);
-                                    if (mysqli_num_rows($pacientes) > 0) {
-                                        foreach ($pacientes as $paciente) {
+                                    $sql = "SELECT * FROM funcionarios";
+                                    $funcionarios = mysqli_query($conexao, $sql);
+                                    if (mysqli_num_rows($funcionarios) > 0) {
+                                        foreach ($funcionarios as $funcionario) {
                                     /*print_r($usuarios); //ler arrays
                                     exit;*/
                                 ?>
                                 <tr>
-                                    <td><?= $paciente['idPaciente']?></td>
-                                    <td><?= $paciente['nomePaciente']?></td>
-                                    <td><?= date('d/m/Y', strtotime($paciente['dtNascPaciente'])) ?></td>
-                                    <td><?= $paciente['sexoPaciente']?></td>
-                                    <td><?= $paciente['endPaciente']?></td>
-                                    <td><?= $paciente['nomeMaePaciente']?></td>
-                                    <td><?= date('d/m/Y', strtotime($paciente['dtInternacaoPaciente'])) ?></td>
+                                    <td><?= $funcionario['idFuncionario']?></td>
+                                    <td><?= $funcionario['nomeFuncionario']?></td>
+                                    <td><?= $funcionario['cargoFuncionario']?></td>
+                                    <td><?= $funcionario['tipoConselhoFuncionario']?></td>
+                                    <td><?= $funcionario['nRegistroConselhoFuncionario']?></td>
+                                    <td><?= $funcionario['telefoneFuncionario']?></td>
                                     <td>
-                                        <a href="ver_paciente.php?idPaciente=<?= $paciente['idPaciente']?>" class="btn btn-secondary btn-sm">Ver</a>
-                                        <a href="editar_paciente.php?idPaciente=<?= $paciente['idPaciente']?>" class="btn btn-success btn-sm">Editar</a>
+                                        <a href="ver_funcionario.php?idFuncionario=<?= $funcionario['idFuncionario']?>" class="btn btn-secondary btn-sm">Ver</a>
+                                        <a href="" class="btn btn-success btn-sm">Editar</a>
                                         <form action="" method="POST" class="d-inline">
                                             <button type="submit" name="apagarPaciente" value="1" class="btn btn-danger btn-sm">Excluir</button>
                                         </form>
