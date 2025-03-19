@@ -57,8 +57,8 @@ require "banco/conexao.php"; ?>
                                     <td>
                                         <a href="ver_paciente.php?idPaciente=<?= $paciente['idPaciente']?>" class="btn btn-secondary btn-sm">Ver</a>
                                         <a href="editar_paciente.php?idPaciente=<?= $paciente['idPaciente']?>" class="btn btn-success btn-sm">Editar</a>
-                                        <form action="" method="POST" class="d-inline">
-                                            <button type="submit" name="apagarPaciente" value="1" class="btn btn-danger btn-sm">Excluir</button>
+                                        <form action="frmApagarPacientes.php" method="POST" class="d-inline">
+                                            <button onclick="return confirm('Tem certeza que deseja excluir?')" type="submit" name="apagarPaciente" value="<?= $paciente['idPaciente']?>" class="btn btn-danger btn-sm">Excluir</button>
                                         </form>
                                     </td>
                                 </tr>

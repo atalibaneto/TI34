@@ -54,9 +54,9 @@ require "banco/conexao.php"; ?>
                                     <td><?= $funcionario['telefoneFuncionario']?></td>
                                     <td>
                                         <a href="ver_funcionario.php?idFuncionario=<?= $funcionario['idFuncionario']?>" class="btn btn-secondary btn-sm">Ver</a>
-                                        <a href="" class="btn btn-success btn-sm">Editar</a>
-                                        <form action="" method="POST" class="d-inline">
-                                            <button type="submit" name="apagarPaciente" value="1" class="btn btn-danger btn-sm">Excluir</button>
+                                        <a href="editar_funcionario.php?idFuncionario=<?= $funcionario['idFuncionario']?>" class="btn btn-success btn-sm">Editar</a>
+                                        <form action="frmApagarFuncionarios.php" method="POST" class="d-inline">
+                                            <button onclick="return confirm('Tem certeza que deseja excluir?')" type="submit" name="apagarFuncionario" value="<?= $funcionario['idFuncionario']?>" class="btn btn-danger btn-sm">Excluir</button>
                                         </form>
                                     </td>
                                 </tr>
