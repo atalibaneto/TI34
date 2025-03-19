@@ -66,7 +66,7 @@ require "banco/conexao.php"; ?>
                     </div>
                 <?php    
                         } else {
-                                echo "<h5>Paciente não encontrado</h5>";
+                                echo "<h5>Funcionário não encontrado</h5>";
                         }
                     }
                 ?>
