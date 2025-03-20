@@ -1,4 +1,4 @@
-<ul class="nav flex-column">
+<ul class="nav flex-column mt-3">
     <li class="nav-item p-1">
         <a class="btn btn-success" href="index.php">Cadastrar Paciente</a>
     </li>

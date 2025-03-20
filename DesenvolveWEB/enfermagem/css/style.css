@@ -1,0 +1,11 @@
+.btn-success {
+    width: 200px;
+}
+.nav-link {
+    color:#FFF;
+    background-color: var(--bs-success);
+}
+.nav-link:hover {
+    color: #FFF;
+    background-color: #157146;
+}

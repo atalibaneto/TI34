@@ -24,6 +24,7 @@ require "banco/conexao.php"; ?>
                         <h4>Lista de Funcionários</h4>
                     </div>
                     <div class="card-body">
+                    <?php include "mensagem.php"; ?>
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
